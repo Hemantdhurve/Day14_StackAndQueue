@@ -29,6 +29,28 @@ namespace StackAndQueue
             }
         }
 
+        //Dequeue Method is used to Delet elements from the queue
+
+        public void Dequeue()
+        {
+            if (this.front == null)
+            {
+                Console.WriteLine("Deletion of elements is not possible because Queue is Empty");
+                return; 
+            }
+            Console.WriteLine("Element Deleted from queue : {0} ", this.front.data);
+            this.front=this.front.Next;
+        } 
+
+        //IsEmpty method is used to delet all the elements from the Queue
+        public void IsEmpty()
+        {
+            while (this.front != null)
+            {
+                Dequeue();
+            }
+        }
+
         //Display method is used to display elements in queue
 
         public void Display()

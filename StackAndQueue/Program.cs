@@ -18,7 +18,8 @@ namespace StackAndQueue
                 Console.WriteLine("Please Select Options :\n" +
                     "1)Elements added using Linked List in Stack using Push method\n" +
                     "2)Element deleted from stack using Pop method\n" +
-                    "3)Elements added using Linked List in Queue usin Enqueue method\n");
+                    "3)Elements added using Linked List in Queue usin Enqueue method\n" +
+                    "4)Element deleted from the Queue using Dequeue method\n");
 
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -75,6 +76,32 @@ namespace StackAndQueue
                         queue.Enqueue(30);
                         queue.Enqueue(70);                       
                         queue.Display();
+                        Console.WriteLine("\n");
+                        Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
+
+                        break;
+
+                    case 4:
+
+                        QueuelinkedList queue1 = new QueuelinkedList();
+                        Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
+                        Console.WriteLine("Adding elements in the Queue :");
+
+                        queue1.Enqueue(56);
+                        queue1.Enqueue(30);
+                        queue1.Enqueue(70);
+                        queue1.Display();
+
+                        Console.WriteLine("\n");
+                        Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
+
+                        queue1.Dequeue();
+                        queue1.Display();
+                        Console.WriteLine("\n");
+                        Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
+
+                        queue1.IsEmpty();
+                        queue1.Display();
                         Console.WriteLine("\n");
                         Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
 
